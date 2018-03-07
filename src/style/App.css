@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #333;
+}
+.verifPass {
+    top: 28px !important;
+    /* transform: translateY(-50%); */
+    font-size: 15px;
+}
+.form-control {
+    border: 1px solid #333;
+    border-color: transparent;
+    box-shadow: none;
+    background: #f1f1f1;
+    transition: .2s;
+    height: 50px;
+    font-size: 1.2em;
+}
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #333;
+    border-color: #333;
+}
+
+.has-error .form-control:focus {
+    box-shadow: none;
+    border-color: #a94442 !important;
+}
+.has-success .form-control:focus {
+    box-shadow: none;
+    border-color: #2b542c !important;
+}
+.has-warning .form-control:focus {
+    box-shadow: none;
+    border-color: #8a6d3b !important;
+}
+.align-middle {
+    top: 50%;
+    position: absolute;
+    width: 100%;
+    transform: translateY(-50%);
+    left: 0;
+}
+.color {
+    background: white;
+    border-radius: 5px;
+    padding: 50px 80px;
+}
+@media screen and (max-width: 991px) {
+    .color {
+        padding: 50px 40px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .color {
+        padding: 50px 30px;
+    }
+}
+.container-btn {
+    padding: 0;
+}
+.submitBtn {
+    font-size: 1.3em;
+    font-weight: 600;
+    background: rgb(77, 77, 77);
+    border: 2px solid transparent;
+    transition: .2s;
+    width: 100%;
+    padding: 12px 30px;
+    outline: none !important;
+    color: white;
+    margin-top: 20px;
+}
+.submitBtn:hover {
+    background: white;
+    border-color: rgb(77, 77, 77);
+    color: rgb(77, 77, 77);
+}
+h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.errorMessaje h1 {
+    color: #a94442;
+    font-size: 1em;
+
+    line-height: 25px;
+}
