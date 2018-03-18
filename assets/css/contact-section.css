@@ -244,10 +244,10 @@
     transition: opacity 0.3s .2s, background-color 0.2s 0s;
 }
 .contact--card nav.active a:nth-of-type(2) {
-    transition: opacity 0.3s .35s, background-color 0.2s 0s;
+    transition: opacity 0.3s .3s, background-color 0.2s 0s;
 }
 .contact--card nav.active a:nth-of-type(3) {
-    transition: opacity 0.3s .5s, background-color 0.2s 0s;
+    transition: opacity 0.3s .4s, background-color 0.2s 0s;
 }
 .contact--card nav a {
     background-color: #f9f9f9;
