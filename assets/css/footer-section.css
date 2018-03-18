@@ -1,0 +1,114 @@
+:root {
+    --main-color: #F6859D;
+    --primary-color: #55556B;
+    --second-color: #A9A9A9;
+    --contrast-color: #fff;
+}
+
+/* Footer */
+.footer {
+    background: #f8f8f8;
+    height: auto;
+    min-height: 300px;
+}
+.footer--main-container {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-height: 100px;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 50px;
+    width: 100%;
+    max-width: 1200px;
+}
+.footer--main-container img {
+    display: inline-block;
+    height: auto;
+    padding: 25px 0;
+    width: 80%;
+    max-width: 300px;
+}
+@media screen and (max-width: 999px) {
+    .footer--main-container img {
+        display: none;
+    }
+}
+.footer--content {
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: space-around;
+    padding: 25px 0;
+    margin: 0 auto;
+    width: 70%;
+}
+.footer--list-section {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.footer--list h1 {
+    color: #9196aa;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 18px 0;
+    position: relative;
+    text-align: left;
+}
+.footer--list {
+    padding: 0;
+}
+.footer--list h1::after {
+    background: var(--primary-color);
+    bottom: -10px;
+    content: '';
+    height: 2px;
+    left: 0%;
+    opacity: .7;
+    position: absolute;
+    width: 25px;
+}
+.footer--list-item {
+    color: #9196aa;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: normal;
+    list-style: none;
+    margin: 0 auto;
+    padding: 3px 0;
+    text-align: left;
+    transition: all .1s ease;
+}
+.footer--list-item:hover {
+    color: var(--primary-color);
+}
+.footer--list-item:hover {
+    text-decoration: underline;
+}
+.footer--logo-content {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+.footer--logo-content h1 {
+    color: #9196aa;
+    font-size: 1.9em;
+    letter-spacing: 5px;
+    position: relative;
+    text-transform: uppercase;
+}
+.footer--logo-content h1::after {
+    content: '© 2018';
+    font-size: 14px;
+    font-weight: 400;
+    left: calc(50% - 5px);
+    letter-spacing: normal;
+    position: absolute;
+    text-transform: lowercase;
+    transform: translateX(-50%);
+    top: 100%;
+}

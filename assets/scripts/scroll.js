@@ -19,6 +19,20 @@ $(document).ready(function () {
         });
         $('#menu2').removeClass('menu-active');
     });
+    $('#feature-menu').click(function () {
+        document.getElementById('feature').scrollIntoView({
+            block: 'start',
+            behavior: 'smooth'
+        });
+        $('#menu2').removeClass('menu-active');
+    });
+    $('#contact-menu').click(function () {
+        document.getElementById('contact').scrollIntoView({
+            block: 'start',
+            behavior: 'smooth'
+        });
+        $('#menu2').removeClass('menu-active');
+    });
     
     var scrollEnought = false;
 

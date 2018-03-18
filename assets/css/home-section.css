@@ -376,8 +376,8 @@ body {
     -webkit-clip-path: circle(10% at 0% 50%);
     clip-path: circle(10% at 0% 50%);
     display: flex;
-    height: 100vh;
-    min-height: 800px;    
+    height: 100%;
+    min-height: 600px;
     justify-content: space-around;
     align-items: center;
     margin-left: -500px;
@@ -389,8 +389,8 @@ body {
 }
 .menu-active {
     margin-left: 0;
-    -webkit-clip-path: circle(100% at 0% 50%);
-    clip-path: circle(100% at 0% 50%);
+    -webkit-clip-path: circle(200% at 0% 50%);
+    clip-path: circle(200% at 0% 50%);
 }
 #close-menu {
     color: white;
