@@ -41,9 +41,6 @@
     transition: all .1s ease-in-out;
     width: 400px;
 }
-.feature--card:hover{
-    box-shadow: 0 5px 55px 5px #f9f9f96b;
-}
 .feature--card-header {
     height: 250px;
     position: relative;
@@ -111,7 +108,16 @@
     transition: all .2s ease-in-out;
     width: 50%;
 }
-.feature--card:hover .feature--card-btn {
-    box-shadow: 0 5px 45px 3px rgba(85, 85, 107, 0.9);
-    transform: translateY(-3px);
+
+
+
+/* Hover */
+@media screen and (min-width: 769px) {
+    .feature--card:hover{
+        box-shadow: 0 5px 55px 5px #f9f9f96b;
+    }
+    .feature--card:hover .feature--card-btn {
+        box-shadow: 0 5px 45px 3px rgba(85, 85, 107, 0.9);
+        transform: translateY(-3px);
+    }
 }

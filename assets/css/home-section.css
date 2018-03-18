@@ -80,9 +80,6 @@ body {
     font-weight: 400;
     transition: all .1s ease-in-out;
 }
-.signin-btn:hover {
-    color: var(--main-color);
-}
 .signup-btn {
     align-items: center;
     background: var(--contrast-color);
@@ -107,18 +104,6 @@ body {
     margin-right: 0px;
     transition: visibility .1s ease-in-out, margin .15s ease-in-out, opacity .3s ease-in-out;
     visibility: hidden;
-}
-.signup-btn:hover {
-    background: var(--main-color);
-    color: var(--contrast-color);
-}
-.signup-btn:hover h3 {
-    margin-right: 23px;
-}
-.signup-btn:hover #signup-arrow {
-    margin-right: 25px;
-    opacity: 1;
-    visibility: visible;
 }
 
 
@@ -174,9 +159,6 @@ body {
     transition: all .1s ease-in-out;
     position: relative;
 }
-.start-btn:hover {
-    box-shadow: 0 5px 25px 4px rgba(246, 133, 158, 0.85);
-}
 .start-btn h3 {
     font-size: 23px;
     font-weight: 500;
@@ -192,14 +174,6 @@ body {
     margin-left: 80px;
     opacity: 0;
     transition: all .15s ease-in-out;
-}
-.start-btn:hover h3 {
-    margin-left: -40px;
-    opacity: 0;
-}
-.start-btn:hover #start-arrow {
-    margin-left: 0px;
-    opacity: 1;
 }
 .social {
     align-items: center;
@@ -224,10 +198,6 @@ body {
         opacity: .6;
     }
 }
-.social .facebook:hover {
-    color: var(--main-color);
-    opacity: 1;
-}
 .social .twitter {
     animation: tw .3s ease-in-out 1.8s 1 forwards;  
     color: var(--second-color);
@@ -243,10 +213,6 @@ body {
         margin-left: 13px;
         opacity: .6;
     }
-}
-.social .twitter:hover {
-    color: var(--main-color);
-    opacity: 1;
 }
 .social .instagram {
     animation: in .3s ease-in-out 2.1s 1 forwards;  
@@ -264,10 +230,6 @@ body {
         opacity: .6;
     }
 }
-.social .instagram:hover {
-    color: var(--main-color);
-    opacity: 1;
-}
 .social .google {
     animation: in .3s ease-in-out 2.4s 1 forwards;  
     color: var(--second-color);
@@ -283,10 +245,6 @@ body {
         margin-left: 13px;
         opacity: .6;
     }
-}
-.social .google:hover {
-    color: var(--main-color);
-    opacity: 1;
 }
 .container-home-right {
     animation: home-bg 1.5s ease .7s 1 forwards;
@@ -344,10 +302,6 @@ body {
 #down-arrow::before {
     left: -10px;
 }
-#down-arrow:hover {
-    box-shadow: 0 3px 20px 7px #F6859D9d;
-    transform: scale(1.1);
-}
 #down-arrow-2 {
     color: var(--contrast-color);
     cursor: pointer;
@@ -364,9 +318,6 @@ body {
     letter-spacing: 2px;
     position: absolute;
     transition: all .2s ease-in-out;
-}
-#down-arrow:hover #down-arrow-2 {
-    bottom: 8px;
 }
 
 
@@ -433,9 +384,6 @@ body {
     opacity: .8;
     transition: all .2s ease-in-out;
 }
-.social-menu .facebook:hover {
-    opacity: 1;
-}
 .social-menu .twitter {
     color: var(--contrast-color);
     cursor: pointer;
@@ -443,9 +391,6 @@ body {
     margin: 13px 15px;
     opacity: .8;
     transition: all .2s ease-in-out;
-}
-.social-menu .twitter:hover {
-    opacity: 1;
 }
 .social-menu .instagram {
     color: var(--contrast-color);
@@ -455,9 +400,6 @@ body {
     opacity: .8;
     transition: all .2s ease-in-out;
 }
-.social-menu .instagram:hover {
-    opacity: 1;
-}
 .social-menu .google {
     color: var(--contrast-color);
     cursor: pointer;
@@ -465,9 +407,6 @@ body {
     margin: 13px 15px;
     opacity: .8;
     transition: all .2s ease-in-out;
-}
-.social-menu .goolge:hover {
-    opacity: 1;
 }
 .body-menu {
     position: relative;
@@ -520,12 +459,83 @@ body {
     left: -15px;
     transform-origin: left;
 }
-.list-menu:hover {
-    letter-spacing: 18px;
-}
-.list-menu:hover::after {
-    width: 15% !important;
-}
-.list-menu:hover::before {
-    width: 15% !important;
+
+
+
+
+
+
+
+/* Hover */
+@media screen and (min-width: 769px) {
+    .signin-btn:hover {
+        color: var(--main-color);
+    }
+    .signup-btn:hover {
+        background: var(--main-color);
+        color: var(--contrast-color);
+    }
+    .signup-btn:hover h3 {
+        margin-right: 23px;
+    }
+    .signup-btn:hover #signup-arrow {
+        margin-right: 25px;
+        opacity: 1;
+        visibility: visible;
+    }
+    .start-btn:hover {
+        box-shadow: 0 5px 25px 4px rgba(246, 133, 158, 0.85);
+    }
+    .start-btn:hover h3 {
+        margin-left: -40px;
+        opacity: 0;
+    }
+    .start-btn:hover #start-arrow {
+        margin-left: 0px;
+        opacity: 1;
+    }
+    .social .facebook:hover {
+        color: var(--main-color);
+        opacity: 1;
+    }
+    .social .twitter:hover {
+        color: var(--main-color);
+        opacity: 1;
+    }
+    .social .instagram:hover {
+        color: var(--main-color);
+        opacity: 1;
+    }
+    .social .google:hover {
+        color: var(--main-color);
+        opacity: 1;
+    }
+    #down-arrow:hover {
+        box-shadow: 0 3px 20px 7px #F6859D9d;
+        transform: scale(1.1);
+    }
+    #down-arrow:hover #down-arrow-2 {
+        bottom: 8px;
+    }
+    .social-menu .facebook:hover {
+        opacity: 1;
+    }
+    .social-menu .twitter:hover {
+        opacity: 1;
+    }
+    .social-menu .instagram:hover {
+        opacity: 1;
+    }
+    .social-menu .goolge:hover {
+        opacity: 1;
+    }
+    .list-menu:hover {
+        letter-spacing: 18px;
+    }
+    .list-menu:hover::after {
+        width: 15% !important;
+    }
+    .list-menu:hover::before {
+        width: 15% !important;
+    }
 }

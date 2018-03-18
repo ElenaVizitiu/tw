@@ -82,12 +82,6 @@
     text-align: left;
     transition: all .1s ease;
 }
-.footer--list-item:hover {
-    color: var(--primary-color);
-}
-.footer--list-item:hover {
-    text-decoration: underline;
-}
 .footer--logo-content {
     align-items: center;
     display: flex;
@@ -107,9 +101,6 @@
     opacity: .8;
     transition: all .2s ease-in-out;
 }
-.footer--icon:hover {
-    opacity: 1;
-}
 .footer--logo-content h1 {
     color: #9196aa;
     font-size: 1.9em;
@@ -128,4 +119,20 @@
     text-transform: lowercase;
     transform: translateX(-50%);
     top: 100%;
+}
+
+
+
+
+/* Hover */
+@media screen and (min-width: 769px) {
+    .footer--list-item:hover {
+        color: var(--primary-color);
+    }
+    .footer--list-item:hover {
+        text-decoration: underline;
+    }
+    .footer--icon:hover {
+        opacity: 1;
+    }
 }

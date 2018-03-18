@@ -60,9 +60,6 @@ input {
         margin-bottom: 5px;
     }
 }
-input:focus, input:hover {
-    box-shadow: 0 2px 20px 3px rgba(255, 255, 255, .7);
-}
 ::-webkit-input-placeholder {
     color: rgba(85, 85, 107, .4);
 }
@@ -84,6 +81,15 @@ input:focus, input:hover {
         margin-top: 15px;
     }
 }
-.subscribe-btn:hover {
-    box-shadow: 0 2px 20px 3px rgba(246, 133, 158, 0.7);
+
+
+
+/* Hover */
+@media screen and (min-width: 769px) {
+    input:focus, input:hover {
+        box-shadow: 0 2px 20px 3px rgba(255, 255, 255, .7);
+    }
+    .subscribe-btn:hover {
+        box-shadow: 0 2px 20px 3px rgba(246, 133, 158, 0.7);
+    }
 }

@@ -30,9 +30,6 @@ body {
 .about-menu-header {
     color: var(--primary-color) !important;
 }
-.signin-btn-about:hover {
-    color: var(--primary-color);
-}
 .signup-btn-about {
     border-color: var(--primary-color);
     color: var(--primary-color);
@@ -40,11 +37,6 @@ body {
 }
 .signup-btn-about h3 {
     transition: color 0s ease-in-out, margin .1s ease-in-out;
-}
-.signup-btn-about:hover {
-    background: var(--primary-color);
-    border-color: var(--primary-color);
-    color: var(--contrast-color);
 }
 .list-nav h1 {
     color: var(--primary-color);
@@ -82,11 +74,6 @@ body {
     margin-right: 0px;
     transition: visibility .1s ease-in-out, margin .15s ease-in-out, opacity .3s ease-in-out;
     visibility: hidden;
-}
-.signup-btn:hover #signup-arrow2 {
-    margin-right: 25px;
-    opacity: 1;
-    visibility: visible;
 }
 .overlay-about {
     background: #f1f2f6;
@@ -189,4 +176,23 @@ body {
     right: 0;
     top: 0;
     transition: all .3s ease;
+}
+
+
+
+/* Hover */
+@media screen and (min-width: 769px) {
+    .signin-btn-about:hover {
+        color: var(--primary-color);
+    }
+    .signup-btn-about:hover {
+        background: var(--primary-color);
+        border-color: var(--primary-color);
+        color: var(--contrast-color);
+    }
+    .signup-btn:hover #signup-arrow2 {
+        margin-right: 25px;
+        opacity: 1;
+        visibility: visible;
+    }
 }
