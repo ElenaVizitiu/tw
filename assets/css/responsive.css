@@ -55,6 +55,12 @@
     .home .navbar-menu.right {
         display: none;
     }
+    .list-menu::after, .list-menu::before {
+        display: none;
+    }
+    .list-menu:hover {
+        letter-spacing: 5px;
+    }
 }
 @media screen and (max-height: 768px) {
     .body-menu hr {
@@ -67,6 +73,12 @@
         font-size: 18px;
         letter-spacing: 5px;
         font-weight: 500;
+    }
+    .list-menu::after, .list-menu::before {
+        display: none;
+    }
+    .list-menu:hover {
+        letter-spacing: 5px;
     }
 }
 
