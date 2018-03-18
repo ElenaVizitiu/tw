@@ -1,0 +1,198 @@
+:root {
+    --main-color: #F6859D;
+    --primary-color: #55556B;
+    --second-color: #A9A9A9;
+    --contrast-color: #fff;
+}
+body {
+    overflow-x: hidden;
+}
+/* About */
+#about {
+    position: relative;
+    height: 400px;
+}
+.navbar2 {
+    background: rgba(255, 255, 255, .98);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: fixed;
+    top: -100px;
+    transition: .3s ease-in-out;
+    z-index: 99;
+}
+.menu-box-about {
+    color: var(--primary-color) !important;
+}
+.in-view-menu {
+    top: 0;
+}
+.about-menu-header {
+    color: var(--primary-color) !important;
+}
+.signup-btn-about {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    background: rgba(255, 255, 255, .98);
+}
+.signup-btn-about h3 {
+    transition: color 0s ease-in-out, margin .1s ease-in-out;
+}
+.list-nav h1 {
+    color: var(--primary-color);
+    display: inline-block;
+    left: 50%;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    margin-top: -9px;
+    padding: 0;
+    position: absolute;
+    text-transform: uppercase;
+    transform: translateX(-50%);
+    transition: top .2s ease-in-out, opacity .1s ease-in-out;
+}
+.list-nav h1 {
+    padding-left: 10px;
+}
+.inactive-menu-section {
+    top: 60px;
+    opacity: 0;
+}
+.active-menu-section {
+    top: 40px;
+    opacity: 1;
+}
+.next-menu-section {
+    top: 20px;
+    opacity: 0;
+}
+#signup-arrow2 {
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    margin-right: 0px;
+    transition: visibility .1s ease-in-out, margin .15s ease-in-out, opacity .3s ease-in-out;
+    visibility: hidden;
+}
+.overlay-about {
+    background: #f1f2f6;
+    clip-path: polygon(0 65%, 100% 20%, 100% 100%, 0% 100%);
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 0;
+}
+.content-about {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    z-index: 9;
+}
+.left-section-about {
+    align-items: center;
+    background: url('../images/bg-about.svg');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    height: 70%;
+    transition: all .3s ease;
+    width: 35%;
+    z-index: 50;
+}
+.in-view-left {
+    margin-left: -30px;
+    opacity: .8;
+}
+.right-section-about {
+    align-items: center;
+    display: flex;
+    height: auto;
+    margin-left: -100px;
+    width: 55%;
+    z-index: 50;
+}
+.card-about-text {
+    color: #f9f9f9;
+    height: auto;
+    /* padding: 0 15%; */
+    margin: 0 15%;
+}
+.container-text-about {
+    /* background: #f9f9f9; */
+    background: rgba(85, 85, 107, .9);
+    border-radius: 30px;
+    box-shadow: 0px 0px 30px 8px rgba(85, 85, 107, 0.7);
+    padding: 80px 13%;
+    position: relative;
+    margin-top: 0px;
+    transition: all .3s ease;
+}
+.container-text-about::after, .container-text-about::before {
+    background: var(--primary-color);
+    border-radius: 30px;
+    box-shadow: 5px 5px 30px 8px rgba(85, 85, 107, 0.7);
+    content: '';
+    height: 100%;
+    position: absolute;
+    transition: all .3s ease;
+    width: 100%;
+    z-index: 3;
+}
+.container-text-about::after {
+    left: 30px;
+    opacity: .5;
+    top: 30px;
+    transition: all .3s ease;
+    z-index: -1;
+}
+.container-text-about::before {
+    right: 30px;
+    opacity: .5;
+    top: -30px;
+    transition: all .3s ease;
+    z-index: -2;
+}
+.in-view-about-text {
+    box-shadow: 0px 0px 30px 8px rgba(85, 85, 107, 0.4);
+    margin-top: 120px;
+    opacity: .9;
+    transition: all .3s ease;
+}
+.in-view-about-text:after {
+    box-shadow: 5px 5px 30px 8px rgba(85, 85, 107, 0.11);
+    left: 0;
+    top: 0;
+    transition: all .3s ease;
+}
+.in-view-about-text:before {
+    box-shadow: 5px 5px 30px 8px rgba(85, 85, 107, 0.1);
+    right: 0;
+    top: 0;
+    transition: all .3s ease;
+}
+
+
+
+/* Hover */
+@media screen and (min-width: 769px) {
+    .signin-btn-about:hover {
+        color: var(--primary-color);
+    }
+    .signup-btn-about:hover {
+        background: var(--primary-color);
+        border-color: var(--primary-color);
+        color: var(--contrast-color);
+    }
+    .signup-btn:hover #signup-arrow2 {
+        margin-right: 25px;
+        opacity: 1;
+        visibility: visible;
+    }
+}
