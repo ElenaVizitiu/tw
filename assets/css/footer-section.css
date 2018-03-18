@@ -92,12 +92,29 @@
     align-items: center;
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
     padding-bottom: 50px;
+}
+.footer--social-icons {
+    color: #9196aa;
+    font-size: 20px;
+}
+.footer--icon {
+    cursor: pointer;
+    left: 50%;
+    transform: translateX(-51%);
+    margin-left: 10px;
+    opacity: .8;
+    transition: all .2s ease-in-out;
+}
+.footer--icon:hover {
+    opacity: 1;
 }
 .footer--logo-content h1 {
     color: #9196aa;
     font-size: 1.9em;
     letter-spacing: 5px;
+    margin: 0px 0;
     position: relative;
     text-transform: uppercase;
 }
