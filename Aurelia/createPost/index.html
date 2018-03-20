@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CreatePost</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <div class="create-container CreatePost" id="CreatePost">
+        <div class="CreatePost--create-container">
+            <div class="topnav">
+                <div class="topnav-left">
+                    <h1>LEAPSA</h1>
+                </div>              
+                <div class="topnav-right">
+                    <a href="Newsfeed" style="text-decoration: none;">Newsfeed</a>
+                    <a class="active" href="Create Post">Create Post</a>
+                    <a href="My posts" style="text-decoration: none;">My Posts</a>
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/256492/_mLIxaKY_400x400.jpg" alt="Profile Image">
+                </div>  
+            </div>
+            <div class="body--content">
+                <h2>Message</h2>
+                <div class="boxed">
+                    <textarea rows="4" cols="50" name="comment" form="usrform" placeholder="Enter text here..."></textarea>
+                    <form action="/action_page.php" id="usrform">
+                        List of people:
+                        <select>
+                                <option value="name">Name</option>
+                                <option value="name">Name</option>
+                                <option value="name">Name</option>
+                                <option value="name">Name</option>
+                        </select>                              
+                        <input type="submit">
+                    </form>
+                </div>
+                <img src="C:/facultate/anul 2/TW/Proiect/images/MyPosts.svg">
+            </div>
+        </div>
+    </div>
+    <script>
+        var menu = document.getElementById('menu');
+      
+        var menuBtn = document.getElementById('menuBtn');                                 
+        var closeBtn = document.getElementById('closeBtn');                                  
+
+        menuBtn.addEventListener('click', function() {
+        console.log('aa');
+          menu.classList.add('menu--open');
+        });
+      
+        closeBtn.addEventListener('click', function() {
+          menu.classList.remove('menu--open');
+        });
+      
+    </script>
+</body>
+</html>

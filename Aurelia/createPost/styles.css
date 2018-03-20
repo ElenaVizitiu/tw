@@ -1,0 +1,96 @@
+:root {
+    --main-color: #F6859D;
+    --primary-color: #55556B;
+    --second-color: #A9A9A9;
+    --contrast-color: #fff;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.create-container {
+    height: 100%;
+    width: 100%;
+}
+#CreatePost {
+    position: relative;
+}
+.topnav {
+    align-items: center;
+    display: flex;
+    height: 60px;
+    margin-left: -50px;
+    margin-top: -30px;
+    padding: 30px 30px;
+    position: relative;
+    width: 100%;
+}
+.topnav-left h1 {
+    color: var(--primary-color);
+    display: inline-block;
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 15px;
+    margin-left: 60px;
+    padding: 0;
+    text-transform: uppercase;
+}
+.topnav-left h1:hover {
+    color: var(--main-color);
+}
+.topnav-right a {
+    align-content: center;
+    color: var(--primary-color);
+    float: left;
+    font-size: 25px;
+    padding: 20px 100px;
+    position: relative;
+    top: 10px;
+}
+.topnav-right a:hover {
+    color: var(--main-color);
+}
+.topnav-right a.active:hover {
+    color: var(--main-color);      
+}
+.create-container .CreatePost--create-container .topnav-right img{
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    top: 14px;
+    width: 80px;
+}
+.create-container .topnav-right img:hover{
+    
+}
+.body--content {
+    padding: 20px;
+    position: relative;
+    margin: 0;
+    width: 100%;
+}
+.body--content h2 {
+    color: var(--primary-color);
+    padding: 10px;
+}
+.boxed {
+    border: 5px solid var(--primary-color);
+    height: 370px;
+    left: 30px;
+    padding: 10px;
+    position: fixed;
+    width: auto;
+}
+.boxed textarea {
+    padding: 10px;
+    height: 300px;
+    width: auto;
+}
+.body--content img {
+    height: 404px;
+    padding: 30px;
+    position: fixed;
+    top: 165px;
+    right: 0;
+    width: 60%;
+}
